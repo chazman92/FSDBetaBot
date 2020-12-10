@@ -9,7 +9,7 @@ print (os.environ)
 
 @client.event
 async def on_ready() :
-    await client.change_presence(status = discord.Status.idle, activity = discord.Activity(type=discord.ActivityType.listening, name="for the .help command"))
+    await client.change_presence(status = discord.Status.idle, activity = discord.Activity(type=discord.ActivityType.watching, name="for the .help command"))
     print("I am online")
 
 # Setting `Playing ` status
