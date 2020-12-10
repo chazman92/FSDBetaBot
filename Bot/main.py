@@ -5,6 +5,8 @@ import os
 client = commands.Bot(command_prefix=".")
 token = os.getenv("DISCORD_BOT_TOKEN")
 
+print (os.environ)
+
 @client.event
 async def on_ready() :
     await client.change_presence(status = discord.Status.idle, activity = discord.Game("Listening to .help"))
