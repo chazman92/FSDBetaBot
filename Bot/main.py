@@ -9,8 +9,20 @@ print (os.environ)
 
 @client.event
 async def on_ready() :
-    await client.change_presence(status = discord.Status.idle, activity = discord.Game("Listening to .help"))
+    await client.change_presence(status = discord.Status.idle, activity = discord.Activity(type=discord.ActivityType.listening, name="for the .help command"))
     print("I am online")
+
+# Setting `Playing ` status
+# await bot.change_presence(activity=discord.Game(name="a game"))
+
+# Setting `Streaming ` status
+# await bot.change_presence(activity=discord.Streaming(name="My Stream", url=my_twitch_url))
+
+# Setting `Listening ` status
+# await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="a song"))
+
+# Setting `Watching ` status
+# await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="a movie"))
 
 @client.command()
 async def ping(ctx) :
