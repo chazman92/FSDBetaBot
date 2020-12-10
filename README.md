@@ -1,2 +1,2 @@
 # FSDBetaBot
-#Chuck Cook's First Attempt at a Discord Bot
+# Chuck Cook's First Attempt at a Discord Bot
